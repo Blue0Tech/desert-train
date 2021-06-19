@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>
+                <a-asset-item id="train" src="./train.glb"></a-asset-item>
+                <a-img id="desert" src="./desert.jpg"></a-img>
+                <a-img id="sand" src="./sand.jpg"></a-img>
+            </a-assets>
+            <a-sky color="lightblue"></a-sky>
+            <a-entity gltf-model="#train" position="-20 -0.2 -30" scale="0.2 0.2 0.2"></a-entity>
+            <a-plane src="#sand" width="200" height="100" position="0 -1 0" rotation="-90 0 0"></a-plane>
+            <a-plane width="200" height="112" src="#desert" position="0 28 -50"></a-plane>
+        </a-scene>
+    </body>
+</html>
